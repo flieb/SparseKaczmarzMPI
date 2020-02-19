@@ -1,5 +1,6 @@
 function [] = plotsurf(A,dim,fignum,factor,nlog)
 %plots surface of SF in 3D mode
+% Copyright (C) 2020 Florian Lieb
 
 if nargin<5
     nlog = 0;
@@ -49,23 +50,3 @@ ylabel('y');
 zlabel('x');
 grid on
 set(gcf, 'Color', 'w');
-
-%lighting gouraud
-%lighting gouraud
-% %p = patch(isosurface(A,ma-dm));
-% patch(isocaps(A,factor),'FaceColor','interp','EdgeColor','none');
-% p = patch(isosurface(A,factor),'FaceColor','blue','EdgeColor','none'););
-% isonormals(A,p);
-% %daspect([1 2 2])
-% view(3); 
-% ax = gca;
-% ax.XLim = [1 dim(2)];
-% ax.YLim = [1 dim(1)];
-% ax.ZLim = [1 dim(3)];
-% 
-% axis vis3d
-% camlight left
-% camlight left
-% colormap('parula');
-% lighting gouraud
-% title(factor);
